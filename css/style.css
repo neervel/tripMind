@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, input {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -338,4 +338,81 @@ button:active, button:focus {
   .ways-card-block {
     padding: 30px 40px;
   }
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 520px;
+  padding-top: 90px;
+  padding-right: 160px;
+  background: url(../img/form-background.png);
+  background-position-x: -150px;
+}
+
+.form-text {
+  width: 310px;
+  margin-right: 100px;
+}
+
+.form-text__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.form-text__subtitle {
+  font-size: 18px;
+  margin: 0;
+}
+
+.form-form {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.form-form__name, .form-form__phone {
+  padding-left: 25px;
+  width: 265px;
+  height: 65px;
+  font-size: 18px;
+  border-radius: 38px;
+  border: 1px solid #9FA6AB;
+  margin-bottom: 30px;
+}
+
+.form-form__name:focus, .form-form__name:active, .form-form__phone:focus, .form-form__phone:active {
+  outline: none;
+}
+
+.form-form__phone {
+  margin-bottom: 50px;
+}
+
+.form-form__submit {
+  width: 265px;
+  height: 65px;
+  border-radius: 38px;
+  background-color: #DA8344;
+  font-weight: 600;
+  font-size: 18px;
+  transition: .2s;
+  margin-bottom: 10px;
+}
+
+.form-form__submit:hover {
+  background-color: #c46927;
+}
+
+.form-form__text {
+  display: block;
+  font-size: 11px;
+  text-align: center;
+  max-width: 240px;
+}
+
+.form-form__text-link {
+  color: #DA8344;
 }

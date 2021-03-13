@@ -9,7 +9,7 @@ $footer-bg: #DADFE3
 *
   box-sizing: border-box
 
-body
+body, input
   margin: 0
   font-family: "Montserrat", sans-serif
 
@@ -234,4 +234,59 @@ button
       height: 372px
       &-block
         padding: 30px 40px
+
+.form
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  height: 520px
+  padding-top: 90px
+  padding-right: 160px
+  background: url(../img/form-background.png)
+  background-position-x: -150px
+  &-text
+    width: 310px
+    margin-right: 100px
+    &__title
+      margin-top: 0
+      margin-bottom: 30px
+      font-size: 36px
+    &__subtitle
+      font-size: 18px
+      margin: 0
+  &-form
+    display: flex
+    align-items: center
+    flex-flow: column
+    &__name, &__phone
+      padding-left: 25px
+      width: 265px
+      height: 65px
+      font-size: 18px
+      border-radius: 38px
+      border: 1px solid #9FA6AB
+      margin-bottom: 30px
+      &:focus, &:active
+        outline: none
+    &__phone
+      margin-bottom: 50px
+    &__submit
+      width: 265px
+      height: 65px
+      border-radius: 38px
+      background-color: $main-color 
+      font-weight: 600
+      font-size: 18px
+      transition: .2s
+      margin-bottom: 10px
+      &:hover
+        background-color: darken($main-color, 10%)
+    &__text
+      display: block
+      font-size: 11px
+      text-align: center
+      max-width: 240px
+      &-link
+        color: $main-color
       
+    
