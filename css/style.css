@@ -273,10 +273,12 @@ button:active, button:focus {
   background: linear-gradient(360deg, #000000 -7.5%, rgba(0, 0, 0, 0) 75.25%), url(../img/card-4.png);
   color: #fff;
   border-radius: 16px;
+  transition: .2s;
 }
 
 .ways-card:hover {
   cursor: pointer;
+  transform: scale(1.02);
 }
 
 .ways-card-block {
@@ -394,17 +396,19 @@ button:active, button:focus {
 }
 
 .form-form__name, .form-form__phone {
-  padding-left: 25px;
+  padding: 0 25px;
   width: 265px;
   height: 65px;
   font-size: 18px;
   border-radius: 38px;
   border: 1px solid #9FA6AB;
   margin-bottom: 30px;
+  transition: .2s;
 }
 
 .form-form__name:focus, .form-form__name:active, .form-form__phone:focus, .form-form__phone:active {
   outline: none;
+  border: 1px solid #DA8344;
 }
 
 .form-form__phone {
@@ -450,10 +454,12 @@ button:active, button:focus {
   background: linear-gradient(360deg, #000000 -7.5%, rgba(0, 0, 0, 0) 75.25%), url(../img/card-5.png);
   color: #fff;
   border-radius: 16px;
+  transition: .2s;
 }
 
 .review-card:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .review-card-block {

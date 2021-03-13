@@ -194,8 +194,10 @@ button
     background: linear-gradient(360deg, #000000 -7.5%, rgba(0, 0, 0, 0) 75.25%), url(../img/card-4.png);
     color: #fff
     border-radius: 16px
+    transition: .2s
     &:hover
       cursor: pointer
+      transform: scale(1.02)
     &-block
       padding: 45px 60px
       height: 100%
@@ -277,15 +279,17 @@ button
     align-items: center
     flex-flow: column
     &__name, &__phone
-      padding-left: 25px
+      padding: 0 25px
       width: 265px
       height: 65px
       font-size: 18px
       border-radius: 38px
       border: 1px solid #9FA6AB
       margin-bottom: 30px
+      transition: .2s
       &:focus, &:active
         outline: none
+        border: 1px solid $main-color
     &__phone
       margin-bottom: 50px
     &__submit
@@ -316,8 +320,10 @@ button
     background: linear-gradient(360deg, #000000 -7.5%, rgba(0, 0, 0, 0) 75.25%), url(../img/card-5.png);
     color: #fff
     border-radius: 16px
+    transition: .2s
     &:hover
       cursor: pointer
+      transform: scale(1.05)
     &-block
       padding: 45px 60px
       height: 100%

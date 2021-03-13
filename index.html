@@ -103,8 +103,8 @@
       <p class="form-text__subtitle">Мы перезвоним вам в ближайшее время</p>
     </div>
     <form action="#" class="form-form">
-      <input class="form-form__name" type="text" placeholder="Ваше имя">
-      <input class="form-form__phone" type="tel" placeholder="+7(___)___-__-__"> 
+      <input class="form-form__name" type="text" maxlength="20" placeholder="Ваше имя" required>
+      <input class="form-form__phone" placeholder="+7 (___) ___-__-__" required> 
       <button class="form-form__submit" type="submit">Отправить заявку </button>
       <span class="form-form__text">Нажимая на кнопку, вы даете согласие на <a class="form-form__text-link" href="#">обработку персональных данных</a></span>
     </form>
@@ -145,6 +145,7 @@
   <script src="https://kit.fontawesome.com/59768ca919.js" crossorigin="anonymous"></script>
   <script src="js/jquery.js"></script>
   <script src="js/wow.js"></script>
+  <script src="js/validate.js"></script>
   <script>
     $(function(){
       new WOW().init();
@@ -155,6 +156,7 @@
           }, 400);
           return false;
       });
+      $('.form-form__phone').mask("+7 (999) 999-99-99");
     })
   </script>
 </body>
