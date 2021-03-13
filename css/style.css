@@ -16,6 +16,7 @@ a {
 }
 
 button {
+  font-family: "Montserrat", sans-serif;
   background: rgba(0, 0, 0, 0);
   border: none;
 }
@@ -236,5 +237,105 @@ button:active, button:focus {
   }
   .hero-card__title {
     font-size: 20px;
+  }
+}
+
+.ways {
+  padding: 160px 260px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ways-card {
+  width: 830px;
+  height: 475px;
+  background: linear-gradient(360deg, #000000 -7.5%, rgba(0, 0, 0, 0) 75.25%), url(../img/card-4.png);
+  color: #fff;
+  border-radius: 16px;
+}
+
+.ways-card:hover {
+  cursor: pointer;
+}
+
+.ways-card-block {
+  padding: 45px 60px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.ways-card__title {
+  font-size: 24px;
+  font-weight: 700;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  margin: 0;
+}
+
+.ways-card__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.ways-card-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ways-card__text {
+  font-size: 20px;
+  margin: 0;
+  max-width: 200px;
+  display: inline-block;
+}
+
+.ways-card__arrow {
+  display: inline;
+}
+
+.ways-block {
+  width: 500px;
+}
+
+.ways-block__title {
+  font-size: 42px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.ways-block__subtitle {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.ways-block__btn {
+  font-size: 20px;
+  font-weight: 600;
+  width: 265px;
+  height: 75px;
+  border-radius: 38px;
+  color: #DA8344;
+  border: 1px solid #DA8344;
+  transition: .1s;
+}
+
+.ways-block__btn:active {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 1600px) {
+  .ways {
+    padding: 100px 160px;
+  }
+  .ways-card {
+    width: 650px;
+    height: 372px;
+  }
+  .ways-card-block {
+    padding: 30px 40px;
   }
 }

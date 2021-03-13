@@ -20,6 +20,7 @@ a
   text-decoration: none
 
 button
+  font-family: "Montserrat", sans-serif
   background: rgba(0, 0, 0, 0)
   border: none
   &:hover
@@ -165,3 +166,72 @@ button
         padding: 20px
       &__title
         font-size: 20px
+
+.ways
+  padding: 160px 260px
+  +flex
+  &-card
+    width: 830px
+    height: 475px
+    background: linear-gradient(360deg, #000000 -7.5%, rgba(0, 0, 0, 0) 75.25%), url(../img/card-4.png);
+    color: #fff
+    border-radius: 16px
+    &:hover
+      cursor: pointer
+    &-block
+      padding: 45px 60px
+      height: 100%
+      display: flex
+      flex-flow: column
+      justify-content: space-between
+    &__title
+      font-size: 24px
+      font-weight: 700
+      font-feature-settings: 'pnum' on, 'lnum' on
+      margin: 0
+    &__subtitle
+      font-weight: 400
+      font-size: 16px
+    &-text
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &__text
+      font-size: 20px
+      margin: 0
+      max-width: 200px
+      display: inline-block
+    &__arrow
+      display: inline
+  &-block
+    width: 500px
+    &__title
+      font-size: 42px
+      margin-top: 0
+      margin-bottom: 30px
+    &__subtitle
+      margin-top: 0
+      margin-bottom: 50px
+      font-size: 18px
+    &__btn
+      font-size: 20px
+      font-weight: 600
+      width: 265px
+      height: 75px
+      border-radius: 38px
+      color: $main-color
+      border: 1px solid $main-color
+      transition: .1s 
+      &:active
+        transform: scale(.95)
+        
+
+
+  @media screen and ( max-width: 1600px )
+    padding: 100px 160px
+    &-card
+      width: 650px
+      height: 372px
+      &-block
+        padding: 30px 40px
+      
