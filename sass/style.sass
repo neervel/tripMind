@@ -1,0 +1,161 @@
+$main-color: #DA8344
+$footer-bg: #DADFE3
+
+@mixin flex()
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+*
+  box-sizing: border-box
+
+body
+  margin: 0
+  font-family: "Montserrat", sans-serif
+
+h1, h2, h3
+  font-family: "Playfair Display", serif
+  
+a
+  text-decoration: none
+
+button
+  background: rgba(0, 0, 0, 0)
+  border: none
+  &:hover
+    cursor: pointer
+  &:active, &:focus
+    outline: none
+
+.hero
+  padding: 40px 120px
+  color: #fff
+  background-image: url(../img/background.jpg)
+  &-header
+    +flex
+    &-nav
+      &__item
+        color: #fff
+        margin-right: 50px
+        position: relative
+        &:last-child
+          margin-right: 0
+        &::after
+          position: absolute
+          height: 0
+          width: 100%
+          content: ""
+          background-color: #fff
+          left: 0
+          bottom: -3px
+        &:hover
+          &::after
+            height: 1px
+  &__title
+    margin-top: 150px
+    font-weight: 700
+    font-size: 70px
+    max-width: 720px
+    margin-bottom: 50px
+  &__subtitle
+    font-weight: 400
+    font-size: 25px
+    max-width: 460px
+    margin-top: 0
+    margin-bottom: 70px
+  &-buttons
+    width: 570px
+    display: flex
+    align-items: center
+    justify-content: start
+    margin-bottom: 30px
+  &__btn
+    &:first-child
+      width: 307px
+      height: 75px
+      background-color: $main-color
+      border-radius: 38px
+      font-size: 20px
+      font-weight: 600
+      margin-right: 60px
+      transition: background-color, .2s 
+      &:hover
+        background-color: darken($main-color, 10%)
+      &:active
+        transform: scale(.95)
+    &:nth-child(2)
+      width: 75px  
+      height: 75px
+      border-radius: 50%
+      border: 1px solid rgba(255, 255, 255, .75)
+      margin-right: 20px
+      transition: .2s
+      & svg path
+        transition: .2s
+      &:hover
+        border-color: $main-color 
+        & svg path
+          stroke: $main-color
+      &:active
+        transform: scale(.95) 
+      & svg
+        margin-left: 5px
+    &-text 
+      display: inline-block
+      max-width: 100px
+      color: rgba(255, 255, 255, .75)
+  &-footer
+    +flex
+  &-social
+    &__title
+      display: block
+      font-size: 16px
+      font-weight: 400
+      margin-bottom: 24px
+    &__link
+      font-size: 18px
+      color: #fff
+      margin-right: 51px
+      &:last-child
+        margin-right: 0
+  &-card
+    display: inline-block
+    width: 285px
+    height: 200px
+    border-radius: 16px
+    margin-right: 30px
+    padding: 25px
+    transition: .2s
+    &:nth-child(1)
+      background: linear-gradient(360deg, #000000 -7.5%, rgba(0, 0, 0, 0) 75.25%), url(../img/card-1.png)
+    &:nth-child(2)
+      background: linear-gradient(360deg, #000000 -7.5%, rgba(0, 0, 0, 0) 75.25%), url(../img/card-2.png);
+    &:nth-child(3)
+      margin-right: 0
+      background: linear-gradient(360deg, #000000 -7.5%, rgba(0, 0, 0, 0) 75.25%), url(../img/card-3.png);
+    &__title
+      margin: 0
+      display: block
+      font-size: 25px
+      margin-bottom: 65px
+      font-feature-settings: 'pnum' on, 'lnum' on
+    &__text
+      max-width: 104px
+      display: inline-block
+    &__arrow
+      margin-left: 95px
+    &s
+      align-self: flex-end
+    &:hover
+      cursor: pointer
+      transform: scale(1.05)
+  @media screen and ( max-width: 1600px )
+    &__title
+      margin-top: 100px
+    &-card
+      width: 220px
+      height: 154px
+      &__title
+        margin-bottom: 20px
+      &__arrow
+        margin-left: 30px
